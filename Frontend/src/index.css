@@ -1,10 +1,101 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Add a cosmic background by default to the body */
 body {
-  margin: 0;
-  background-color: #020617;
-  color: #e2e8f0;
+	margin: 0;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: #020617;
+	color: #e2e8f0;
 }
+
+.app-header {
+	background: rgba(0,0,0,0.4);
+	border-bottom: 1px solid #334155;
+	padding: 1rem 0;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.main-content {
+	max-width: 900px;
+	margin: 2rem auto;
+	padding: 1.5rem;
+}
+
+.input-card {
+	background: rgba(255,255,255,0.05);
+	border: 1px solid #334155;
+	border-radius: 1.5rem;
+	padding: 2rem;
+	margin-bottom: 2rem;
+}
+
+.input-card input, .input-card button {
+	padding: 0.75rem 1rem;
+	border-radius: 0.75rem;
+	border: 1px solid #334155;
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+}
+.input-card button {
+	background: #06b6d4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+.input-card button:hover {
+	background: #0891b2;
+}
+
+.card-list {
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.item-card {
+	background: #fff;
+	color: #0f172a;
+	border-radius: 1rem;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	padding: 2rem 1rem 1rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.item-card .icon {
+	font-size: 2rem;
+	color: #06b6d4;
+	margin-bottom: 0.5rem;
+}
+.item-card .name {
+	font-weight: bold;
+	font-size: 1.1rem;
+	margin-bottom: 0.25rem;
+}
+.item-card .price {
+	color: #0891b2;
+	font-family: monospace;
+	margin-bottom: 1rem;
+}
+.item-card .delete-btn {
+	background: #ef4444;
+	color: #fff;
+	border: none;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	font-weight: bold;
+}
+.item-card .delete-btn:hover {
+	background: #b91c1c;
+}
+.footer {
+	background: rgba(0,0,0,0.6);
+	border-top: 1px solid #334155;
+	padding: 2rem 0;
+	margin-top: 10rem;
+	color: #64748b;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
