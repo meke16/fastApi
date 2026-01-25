@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add a cosmic background by default to the body */
+body {
+  margin: 0;
+  background-color: #020617;
+  color: #e2e8f0;
+}
