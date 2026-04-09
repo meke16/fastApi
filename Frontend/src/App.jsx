@@ -111,7 +111,7 @@ export default function App() {
       <header className="app-header">
         <h1>
           <FaRocket color="#06b6d4" />
-          Sample <span style={{ color: "#06b6d4" }}>CRUD </span>with FastApi api
+            {'\n'} Sample <span style={{ color: "#06b6d4" }}>CRUD </span>with FastApi api
           and React js Frontend
         </h1>
       </header>
